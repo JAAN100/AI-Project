@@ -13,7 +13,7 @@ def get_client():
 def fetch_results(df):
     """
     Takes a dataframe with a 'message' column
-    Returns structured WhatsApp chat analysis using Groq LLaMA 3.1
+    Returns structured TalkTrack chat analysis using Groq LLaMA 3.1
     """
 
     client = get_client()
@@ -27,7 +27,7 @@ def fetch_results(df):
         all_messages = all_messages[:MAX_CHAR_LENGTH]
 
     analysis_prompt = f"""
-Analyze the following WhatsApp group messages and provide structured insights only.
+Analyze the following TalkTrack group messages and provide structured insights only.
 
 ### Input Messages:
 {all_messages}

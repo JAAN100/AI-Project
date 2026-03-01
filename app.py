@@ -10,7 +10,7 @@ import helper
 if 'analysis_done' not in st.session_state:
     st.session_state['analysis_done'] = False
 
-st.sidebar.title("Whatsapp Chat Analyzer")
+st.sidebar.title("TalkTrack Chat Analyzer")
 
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 if uploaded_file is not None:
